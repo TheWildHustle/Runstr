@@ -1,16 +1,19 @@
-# New Iris project
+# Runstr
 
-This is a template to get started quickly with IrisDB & Nostr web application development.
+A Nostr Running App
 
 It has basic building blocks like app routing, navigation, authentication, network settings, social networking and
 [IrisDB](https://github.com/irislib/irisdb) usage examples.
 
-## Project setup
+## Project Goals
 ```
-npm create iris@latest
-cd my-iris-app
-npm install
-npm run dev
+Run Tracking
+Create and join run clubs
+Create and join run competitions
+Listen to popular wavlake playlists from the app
+Run to earn sats and badges
+Easily share runs across the nostr ecosystem
+AI running coaches
 ```
 
 ## Stack
