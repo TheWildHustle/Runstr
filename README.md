@@ -1,0 +1,2 @@
+# Runstr
+Nostr Running App
