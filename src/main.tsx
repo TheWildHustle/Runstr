@@ -2,7 +2,7 @@ import { ndk } from 'irisdb-nostr';
 import ReactDOM from 'react-dom/client';
 import React from 'react';
 
-import { App } from '@/app';
+import { App } from '@/app'; // This import should now work correctly
 import config from '@/config.json';
 import RunTracker from './RunTracker.tsx';
 
@@ -27,9 +27,7 @@ initNDK();
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <App>
-      <RunTracker />
-    </App>
+    <App />
   </React.StrictMode>
 );
 
