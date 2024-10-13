@@ -10,7 +10,7 @@ import SettingsPage from '@/pages/settings';
 import Subscribe from '@/pages/subscription';
 import UserPage from '@/pages/user';
 import Layout from '@/shared/components/Layout';
-
+import RunTracker from '@/RunTracker';  // Import the RunTracker component
 
 export const router = createBrowserRouter(
   createRoutesFromElements([
@@ -24,7 +24,7 @@ export const router = createBrowserRouter(
       <Route path="/document/:file?" element={<DocsPage />} />
       <Route path="/chat/:id?" element={<ChatPage />} />
       <Route path="/create-iris" element={<CreateIris />} />
-      <Route path="/run" element={<RunPage />} />
+      <Route path="/run" element={<RunTracker />} />  // Use RunTracker here
     </Route>,
   ]),
 );
