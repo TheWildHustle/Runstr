@@ -1,10 +1,10 @@
 import { ndk } from 'irisdb-nostr';
 import ReactDOM from 'react-dom/client';
 import React from 'react';
+import 'leaflet/dist/leaflet.css';  // Add this import
 
 import { App } from '@/app';
 import config from '@/config.json';
-import RunTracker from './RunTracker.tsx';
 
 // Initialize NDK with error handling and fallback relays
 const initNDK = async () => {
@@ -27,9 +27,7 @@ initNDK();
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <App>
-      <RunTracker />
-    </App>
+    <App />
   </React.StrictMode>
 );
 
