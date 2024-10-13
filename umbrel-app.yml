@@ -1,0 +1,14 @@
+manifestVersion: 1
+id: iris-docs
+category: social
+name: Iris Docs
+version: "1.0.5"
+tagline: Collaborative document editor on Nostr
+description: >-
+  Iris Docs is a collaborative document editor built on Nostr. It allows you to
+  create, edit, and share documents with others in real-time.
+developer: Martti Malmi
+website: https://github.com/irislib/iris-docs
+repo: https://github.com/irislib/iris-docs
+support: https://github.com/irislib/iris-docs/issues
+port: 5173

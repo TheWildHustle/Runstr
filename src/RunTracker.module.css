@@ -1,0 +1,44 @@
+.runTracker {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .time {
+    font-size: 2em;
+    margin: 20px 0;
+  }
+  
+  .controls {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+  }
+  
+  .mapContainer {
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .error {
+    color: red;
+    margin-top: 10px;
+  }
+  
+  .distance {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+  }
+  

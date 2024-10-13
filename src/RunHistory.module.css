@@ -1,0 +1,21 @@
+.runHistory {
+    margin-top: 20px;
+    border-top: 1px solid #ccc;
+    padding-top: 20px;
+  }
+  
+  .runHistory h2 {
+    margin-bottom: 10px;
+  }
+  
+  .runItem {
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .runItem div {
+    margin-bottom: 5px;
+  }
