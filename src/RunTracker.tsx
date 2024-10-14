@@ -3,6 +3,7 @@ import { MapContainer, TileLayer, Polyline } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 import styles from './RunTracker.module.css';
 import RunHistory from './RunHistory';
+import { ndk } from 'irisdb-nostr';
 
 interface Position {
   latitude: number;
@@ -32,6 +33,11 @@ const RunTracker: React.FC = () => {
     const storedRuns = localStorage.getItem('runHistory');
     if (storedRuns) {
       setRuns(JSON.parse(storedRuns));
+    }
+
+    // Check if NDK is initialized
+    if (!ndk.isInitialized()) {
+      setError('NDK is not initialized. Some features may not work.');
     }
   }, []);
 
@@ -126,6 +132,13 @@ const RunTracker: React.FC = () => {
       
       // Save runs to local storage
       localStorage.setItem('runHistory', JSON.stringify(updatedRuns));
+
+      // If NDK is initialized, you could add Nostr event publishing here
+      if (ndk.isInitialized()) {
+        // Publish run data to Nostr
+        // This is a placeholder and needs to be implemented based on your Nostr integration
+        console.log('Publishing run data to Nostr');
+      }
     }
     setIsRunning(!isRunning);
   };
