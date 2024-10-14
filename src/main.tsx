@@ -1,7 +1,7 @@
 import { ndk } from 'irisdb-nostr';
 import ReactDOM from 'react-dom/client';
 import React from 'react';
-import 'leaflet/dist/leaflet.css';  // Add this import
+import 'leaflet/dist/leaflet.css';
 
 import { App } from '@/app';
 import config from '@/config.json';
@@ -9,6 +9,12 @@ import config from '@/config.json';
 // Initialize NDK with error handling and fallback relays
 const initNDK = async () => {
   try {
+    // Check if NDK is already initialized
+    if (ndk.isInitialized()) {
+      console.log('NDK already initialized');
+      return;
+    }
+
     await ndk({
       explicitRelayUrls: [
         'wss://nostr-01.bolt.observer/',
